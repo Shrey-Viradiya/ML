@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<petal length (cm) &le; 2.45<br/>entropy = 1.579<br/>samples = 112<br/>value = [42, 34, 36]<br/>class = setosa>, fillcolor="#fdf5ef"] ;
+1 [label=<entropy = 0.0<br/>samples = 42<br/>value = [42, 0, 0]<br/>class = setosa>, fillcolor="#e58139"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<petal width (cm) &le; 1.75<br/>entropy = 0.999<br/>samples = 70<br/>value = [0, 34, 36]<br/>class = virginica>, fillcolor="#f8f4fe"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label=<petal length (cm) &le; 5.05<br/>entropy = 0.406<br/>samples = 37<br/>value = [0, 34, 3]<br/>class = versicolor>, fillcolor="#4ae78c"] ;
+2 -> 3 ;
+4 [label=<petal width (cm) &le; 1.65<br/>entropy = 0.191<br/>samples = 34<br/>value = [0, 33, 1]<br/>class = versicolor>, fillcolor="#3fe685"] ;
+3 -> 4 ;
+5 [label=<entropy = 0.0<br/>samples = 32<br/>value = [0, 32, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label=<petal length (cm) &le; 4.75<br/>entropy = 1.0<br/>samples = 2<br/>value = [0, 1, 1]<br/>class = versicolor>, fillcolor="#ffffff"] ;
+4 -> 6 ;
+7 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 0, 1]<br/>class = virginica>, fillcolor="#8139e5"] ;
+6 -> 7 ;
+8 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+6 -> 8 ;
+9 [label=<sepal length (cm) &le; 6.15<br/>entropy = 0.918<br/>samples = 3<br/>value = [0, 1, 2]<br/>class = virginica>, fillcolor="#c09cf2"] ;
+3 -> 9 ;
+10 [label=<entropy = 0.0<br/>samples = 1<br/>value = [0, 1, 0]<br/>class = versicolor>, fillcolor="#39e581"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.0<br/>samples = 2<br/>value = [0, 0, 2]<br/>class = virginica>, fillcolor="#8139e5"] ;
+9 -> 11 ;
+12 [label=<entropy = 0.0<br/>samples = 33<br/>value = [0, 0, 33]<br/>class = virginica>, fillcolor="#8139e5"] ;
+2 -> 12 ;
+}
